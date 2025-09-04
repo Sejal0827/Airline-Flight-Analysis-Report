@@ -1,72 +1,102 @@
 # Airline Flight Analysis Report  
 
 ## Purpose of the Report  
-- Highlight competitiveness in the airline industry.  
-- Show how data-driven insights improve efficiency, revenue, and customer experience.  
-- Demonstrate **Power BI’s role** in analytics.  
-- Present a case study on operational and customer optimization.  
+- To analyze the performance of airlines in terms of revenue, pricing, customer preferences, and operational efficiency.  
+- To uncover patterns in flight scheduling, ticket pricing, and travel demand.  
+- To demonstrate the value of **Power BI dashboards** for deriving actionable insights in the airline industry.  
 
 ---
 
 ## Objectives of the Analysis  
-- Analyze airline dataset using **Power BI**.  
-- Generate actionable insights for efficiency and customer experience.  
-- Use **visualizations** to reveal patterns and KPIs.  
-- Support decisions on **routes, pricing, and service**.  
+- To evaluate airline-wise revenue, pricing trends, and flight volumes.  
+- To assess flight scheduling patterns (time of day, duration, stops).  
+- To study class-wise revenue contributions (**Business vs. Economy**).  
+- To explore how advance booking days impact pricing.  
+- To recommend **data-driven strategies** for revenue growth and customer satisfaction.  
 
 ---
 
 ## Dataset Used  
-- **Source**: Customer survey data (CSV).  
-- **Features**: Airline, Flight code, Source/Destination cities, Departure/Arrival time, Stops, Class, Duration, Days Left, and Price.  
-- Includes both **categorical and continuous variables** for analysis.  
+- **Airlines**: 6 carriers (Indigo, Air India, GO_FIRST, SpiceJet, Vistara, AirAsia).  
+- **Flights**: 1,561 total flights across 6 source & destination cities.  
+- **Variables**: Ticket price, flight duration, departure/arrival time, stops, class (Business/Economy), days left before booking.  
+- **Revenue**: ~₹6 billion generated.  
 
 ---
 
 ## Methodology  
-- Cleaned dataset in **Excel** (removed extra characters, standardized text).  
-- Imported into **Power BI** for measures and visualization.  
-- Used **bar/column charts** to identify patterns and trends.  
+- Cleaned dataset in **Excel** (removed errors, standardized text).  
+- Imported into **Power BI** for modeling and visualization.  
+- Created **measures** for average price, revenue by airline, class revenue, and price variation by booking days.  
+- Built dashboards segmented into:  
+  1. **Overview** (industry performance)  
+  2. **Flight Scheduling Analysis**  
+  3. **Price Analysis**  
 
 ---
 
 ## Analysis & Findings  
 
-1. **Industry & Revenue** – 6 airlines, 1561 flights, ~₹6B revenue.  
-2. **Cities** – Mumbai & Delhi are busiest hubs; Chennai has lowest flight frequency.  
-3. **Airlines** – Vistra leads in flights & revenue; Air Asia & Space lag.  
-4. **Preferences** – One-stop & morning/evening flights most popular; late-night cheaper but less demand.  
-5. **Duration & Class** – Most flights last ~2 hrs; economy class dominates.  
-6. **Pricing** – Ticket prices rise closer to departure; Chennai most expensive, Delhi cheapest.  
+### 1. Industry Overview  
+- **Indigo** leads with the highest number of flights (**704 flights**).  
+- **Vistara** generates the highest revenue (~₹3.9B) despite fewer flights, due to **premium pricing**.  
+- **Delhi (472 flights)** and **Mumbai (323 flights)** are the busiest hubs.  
+- **Economy class dominates**: 1,560 flights vs. 295 in Business.  
+
+### 2. Flight Scheduling  
+- **Morning (₹21.6K)** and **Evening (₹21.2K)** flights have high demand, influencing premium pricing.  
+- **One-stop flights (70.3%)** dominate the market, preferred even at higher prices.  
+- Average flight duration:  
+  - Economy = ~10.6 hours  
+  - Business = ~12.7 hours  
+- Most flights last **under 10 hours (1,440 flights)**; very long flights are rare.  
+
+### 3. Price & Revenue Trends  
+- **Average ticket price across airlines**: ₹20.89K.  
+- **Vistara (₹30K avg.)** and **Air India (₹24K avg.)** charge premium fares, capturing higher revenues.  
+- **Indigo & AirAsia** operate at lower prices (~₹4K–6K avg.), focusing on **volume-based strategy**.  
+- **Class-wise revenue**:  
+  - Business class = ~₹4.9B  
+  - Economy class = ~₹1.4B  
+  → Business, though smaller in volume, drives the **majority of revenue**.  
+- **Advance Booking Impact**: Prices increase closer to departure. Example:  
+  - **1–10 days left → highest prices**.  
+  - **41–50 days left → lowest fares**.  
 
 ---
 
 ## Recommendations  
 
-1. Expand **Mumbai/Delhi** routes; explore new ones.  
-2. Boost weaker airlines (**Air Asia, Space**) with promotions.  
-3. Apply **tiered pricing** for one-stop & peak-time flights.  
-4. Improve **customer feedback/response systems**.  
-5. Offer **discounts for late-night flights**.  
-6. Enhance **economy-class experience**.  
-7. Maintain **transparency in pricing changes**.  
-8. Collaborate with competitors for **efficient scheduling**.  
-9. Tailor **marketing strategies** per city.  
-10. Continuously adapt services using **customer feedback**.  
+### 1. Revenue Optimization  
+- Airlines like **AirAsia & Indigo** should adopt **tiered pricing** to boost yield without losing customer volume.  
+- Premium carriers (**Vistara, Air India**) can expand **business-class services** given strong profitability.  
+
+### 2. Flight Scheduling  
+- Add more **morning and evening slots** to align with customer demand.  
+- Incentivize **late-night flights** with discounts to improve utilization.  
+
+### 3. Route Strategy  
+- Increase capacity on **Delhi–Mumbai routes**, the busiest travel corridors.  
+- Explore expansion in **Chennai**, which currently has the lowest connectivity.  
+
+### 4. Customer Engagement  
+- Promote **early booking discounts** to encourage advance reservations.  
+- Provide **tailored offers for economy passengers** to balance affordability and satisfaction.  
 
 ---
 
 ## Limitations  
-- Dataset completeness/accuracy may affect results.  
-- External factors (**economy, fuel prices, regulations**) not included.  
-- Shows **correlations, not causation**.  
-- Rapid industry changes may make findings outdated.  
-- Potential **privacy concerns** in survey data.  
-- Focused only on **quantitative data**.  
+- Dataset may not capture **real-time external factors** (fuel costs, seasonal demand).  
+- **Passenger experience** (comfort, loyalty programs) not analyzed.  
+- Focused mainly on **quantitative patterns**; qualitative insights are missing.  
 
 ---
 
 ## Conclusion  
-- **Power BI analysis** revealed valuable insights into flights, pricing, and customer behavior.  
-- Recommendations provide a roadmap for **efficiency, revenue growth, and customer satisfaction**.  
-- Emphasizes the importance of **data-driven decision-making** for a competitive airline industry.  
+The Airlines Dashboard analysis reveals that:  
+- **Vistara dominates revenue** through premium pricing, while **Indigo leads in flight volume**.  
+- **Business class drives revenue**, despite lower flight share.  
+- **One-stop flights** and **peak-time slots** are most preferred by customers.  
+- **Dynamic pricing** is evident, with fares rising closer to departure.  
+
+By implementing the recommended strategies, airlines can achieve better **route planning, pricing optimization, and customer satisfaction**, ensuring stronger competitiveness in the industry.  
